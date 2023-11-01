@@ -18,7 +18,7 @@ body{
     position :absolute;    
     width: 200px;
     height: 200px;
-    background-image:linear-gradient(to right ,#fff,rgb(78, 49, 170) 70% );
+    background-image:linear-gradient(to left ,#fff,rgb(78, 49, 170) 90%);
     top: 300px;
     left: 380px;
     border-radius: 50%;
@@ -29,7 +29,7 @@ body{
     position: absolute;
     width: 200px;
     height:200px;
-    background-image:linear-gradient(to left ,#fff,rgb(78, 49, 170) 75%);
+    background-image:linear-gradient(to right ,#fff,rgb(78, 49, 170)90%);
     right: 400px;
     top: 150px;
     border-radius: 50%;
@@ -38,11 +38,12 @@ body{
 }
 
 .card-container{
-    background-color: #fff;
-    opacity: 0.4;
+    background-color: rgba(255, 255, 255, .10); 
+    backdrop-filter: blur(15px);   
     width: 380px;
     height: 220px;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0,0,0, 0.2);
 }
